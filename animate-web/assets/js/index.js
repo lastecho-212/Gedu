@@ -1,4 +1,4 @@
-$(function () {
+function load() {
     // Initialize Swiper
     var mySwiper = new Swiper('#js-swiperBig', {
         spaceBetween: 30,
@@ -286,6 +286,6 @@ $(function () {
     }
      // getData();
 
-})
+}
 
 
