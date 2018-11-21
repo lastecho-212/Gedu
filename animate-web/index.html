@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Animate demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!--<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="lib/css/swiper.min.css">
+    <link rel="stylesheet" href="lib/css/animate.css">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body class="body">
+<!-- Swiper -->
+<div class="swiper-container " id="js-swiperBig">
+    <div class="swiper-wrapper">
+        <!--fiest-->
+        <div class="swiper-slide">
+            <div class="swiper-slide-box" id="js-animatePulse">
+                <div class="module-logo-box">
+                    <div class="module-logo-index js-logo-idx">
+                        <span class="top"></span>
+                        <span class="center"></span>
+                        <span class="bottom"></span>
+                        <div class="js-idx-txt">
+                            01
+                        </div>
+                    </div>
+                    <div class="module-logo-txt js-logo-txt">
+                        <span class="left">雅思</span>
+                        <span class="center"></span>
+                        <span class="right">词汇</span>
+                    </div>
+                </div>
+                <div class="module-word-section">
+                    <div class="f-pr">
+                        <div class="word-name" id="js-wordName">
+                        </div>
+                        <div class="word-name-gif" id="js-word-gif">
+                            <img src="assets/imgs/img-word-anim.gif" alt="">
+                        </div>
+                    </div>
+
+                    <div class="word-symble">
+                        <span id="js-symbleType" class="word-symble-type"></span>
+                        <span id="js-symbleName" class="txt word-symble-name">
+                            <span class="word-symble-name el"></span>
+                       </span>
+                    </div>
+                    <div class="word-trans" id="js-wordTrans"></div>
+                </div>
+
+                <div class="module-slide-img f-pr" id="js-slideImg">
+                    <div>
+                        <img src="assets/imgs/img-slide.gif" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--second-->
+        <div class="swiper-slide">
+            <div class="swiper-slide-box f-pr">
+
+                <!--例句插图-->
+                <div class="sentence-imgs-box f-pa" id="js-sentence-box">
+                    <!--例句图-->
+                    <div class="sentence-img">
+                            <div class="swiper-container " id="js-swiperSmall">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="g-slide-div" style="background: url('assets/imgs/img-img.jpg') center top no-repeat;background-size: cover">
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="g-slide-div" style="background: url('assets/imgs/img-img1.jpg') center top no-repeat;background-size: cover">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <!--例句图 上图层-->
+                    <div class="module-img-zindex">
+                        <div class="sentence-img-shine shine-green" id="js-shineGreen">
+                        </div>
+                        <div class="sentence-img-shine shine-red" id="js-shineRed">
+                        </div>
+                        <div class="sentence-img-dot" id="js-dotted">
+                        </div>
+                    </div>
+                </div>
+
+                <!--背景2-->
+                <div class="f-pa sentence-bg-img2">
+
+                </div>
+
+                <div class="g-txt-container">
+                    <!--logo index-->
+                    <div class="module-logo-box">
+                        <div class="module-logo-index module-logo-all">
+                            01
+                        </div>
+                        <div class="module-logo-txt module-logo-all">
+                            雅思词汇
+                        </div>
+                    </div>
+
+                    <!--例句-->
+                    <div class="module-sentence-section">
+                        <div  id="js-sentence">
+                            <div class="sentence-name">Nobody is saying our neighborhoodis a garden of Edon.</div>
+                            <div class="sentence-trans">没有人说我们的邻居是伊甸园</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<audio id="js-audio" autoplay="autoplay" preload="auto" src="assets/media/tts.mp3" hidden>
+</audio>
+
+<script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
+<script src="lib/js/swiper.js"></script>
+<script src="lib/js/anime.2.1.0.js"></script>
+<script src="assets/js/index.js"></script>
+
+</body>
+</html>
